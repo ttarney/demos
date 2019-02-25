@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FeatureToggle.Internal;
-using featuretoggledemo.featuretoggles;
+using featuretoggledemo.handlers;
 using featuretoggleimpl;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -42,13 +42,31 @@ namespace featuretoggledemo
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.MapWhen
+              (
+                  context => context.Request.Path.Value.ToString().ToLower().Contains("featureone"),
+                  appBranch =>
+                  {
+                      app.FeatureFeatureFlagHandler();
+                  }
+              );
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-
+           
             app.UseMvc();
-            
         }
     }
+
+    public static class FeatureToggleExtensions
+    {
+        public static IApplicationBuilder FeatureFeatureFlagHandler(this IApplicationBuilder app)
+        {
+            app.UseMiddleware<FeatureFlagRoutingHandler>();
+            return app;
+        }
+    }
+
 }

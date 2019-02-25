@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FeatureToggle;
-using featuretoggledemo.featuretoggles;
+
 using featuretoggleimpl;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
