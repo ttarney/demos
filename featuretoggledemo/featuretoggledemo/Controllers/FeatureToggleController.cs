@@ -2,41 +2,37 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FeatureToggle;
 using featuretoggledemo.featuretoggles;
+using featuretoggleimpl;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace featuretoggledemo.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class FeatureToggleController : ControllerBase
     {
         [HttpGet]
-        public async Task<IActionResult> GetToggleEnabled()
+        public async Task<IActionResult> GetToggleEnabled(string featureToggle)
         {
+            SimpleFeatureToggle toggle = null;
+            bool isEnabled = false;
             string message = string.Empty;
-            var p = new Printing();
 
-            var s = new Saving();
-            try
+            switch (featureToggle)
             {
-                if (p.FeatureEnabled)
-                {
-                    message = "printing enabled : ";
-                }
-                if (s.FeatureEnabled)
-                {
-                    message = "saving enabled : ";
-                }
+                case "printing":
+                    toggle = new Printing();
+                    break;
+                case "saving":
+                    toggle = new Printing();
+                    break;
+                default:
+                    break;
             }
-            catch(Exception ex)
-            {
-                message = ex.Message;
-            }
-
-
-            return Ok(message);
+            return Ok(toggle.FeatureEnabled);
         }
     }
 }
