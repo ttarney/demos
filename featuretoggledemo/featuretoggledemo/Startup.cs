@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FeatureToggle;
 using FeatureToggle.Internal;
+using featuretoggledemo.Controllers;
 using featuretoggledemo.handlers;
 using featuretoggleimpl;
+using featuretoggleimpl.Custom_Toggles;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -37,6 +40,10 @@ namespace featuretoggledemo
 
             services.AddSingleton(new Printing { ToggleValueProvider = provider });
             services.AddSingleton(new Saving { ToggleValueProvider = provider });
+
+            services.AddSingleton<IFeatureOneToggle, FeatureOneToggle>();
+            services.AddSingleton<IFeatureTwoToggle, FeatureTwoToggle>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

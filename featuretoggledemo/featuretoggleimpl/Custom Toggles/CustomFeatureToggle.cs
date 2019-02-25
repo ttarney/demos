@@ -5,7 +5,16 @@ using System.Text;
 
 namespace featuretoggleimpl.Custom_Toggles
 {
-    public class FeatureOneToggle : IFeatureToggle
+    public interface IFeatureOneToggle : IFeatureToggle
+    {
+
+    }
+
+    public interface IFeatureTwoToggle : IFeatureToggle
+    {
+
+    }
+    public class FeatureOneToggle : IFeatureOneToggle
     {
         public bool FeatureEnabled
         {
@@ -16,7 +25,7 @@ namespace featuretoggleimpl.Custom_Toggles
         }
     }
 
-    public class FeatureTwoToggle : IFeatureToggle
+    public class FeatureTwoToggle : IFeatureTwoToggle
     {
         public bool FeatureEnabled
         {

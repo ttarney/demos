@@ -8,9 +8,9 @@ namespace featuretoggledemo.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ToggleoneController : BaseController
+    public class ToggletwoController : BaseController
     {
-        public ToggleoneController(IFeatureOneToggle toggle)
+        public ToggletwoController(IFeatureTwoToggle toggle)
         {
             _rootFeatureToggle = toggle;
         }
