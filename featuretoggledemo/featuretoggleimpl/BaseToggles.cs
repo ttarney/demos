@@ -8,6 +8,8 @@ namespace featuretoggleimpl
 
     public class Feature1 : SimpleFeatureToggle { }
 
+    public class Feature2 : SimpleFeatureToggle { }
+
     
 
 }
