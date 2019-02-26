@@ -10,4 +10,6 @@ namespace featuretoggleimpl
 
     public class Rebase2 : SimpleFeatureToggle { }
 
+    public class PullRequestFlag : SimpleFeatureToggle { }
+
 }
