@@ -7,4 +7,7 @@ namespace featuretoggleimpl
     public class Saving : SimpleFeatureToggle { }
 
     public class Rebase : SimpleFeatureToggle { }
+
+    public class Rebase2 : SimpleFeatureToggle { }
+
 }
