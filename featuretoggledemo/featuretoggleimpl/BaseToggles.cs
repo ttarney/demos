@@ -10,9 +10,21 @@ namespace featuretoggleimpl
 
     public class TaggingFeature : SimpleFeatureToggle { }
 
-    // comment to get tag
+    // comment to get tag 
+
+    public class foo
+    {
+
+    }
+
+    public class Baz
+    {
+
+    }
 
     // adding some code to show stash
+
+   
 
 
 
