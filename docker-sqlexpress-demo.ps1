@@ -20,4 +20,4 @@ docker stop 83cea2e373d2
 #add volume mapping
 docker run -t -v C:\docker-temp:c:\data <image>
 
-cls
+Clear-Host
