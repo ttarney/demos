@@ -18,6 +18,7 @@ docker exec -it 83cea2e373d2 cmd
 docker stop 83cea2e373d2
 
 #add volume mapping
+# another comment
 docker run -t -v C:\docker-temp:c:\data <image>
 
 Clear-Host
