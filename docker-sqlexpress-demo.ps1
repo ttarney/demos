@@ -1,4 +1,7 @@
-﻿# check to see what has ran
+﻿docker pull microsoft/mssql-server-windows-express
+
+
+# check to see what has ran
 docker ps
 
 
@@ -9,7 +12,7 @@ docker ps -a
 docker run -t -v c:\docker-temp:c:\data -d -p 1433:1433 -e sa_password=P@ssw0rd123! -e ACCEPT_EULA=Y microsoft/mssql-server-windows-express
 
 #get the ip addresses exposed
-docker exec -it 83cea2e373d2 ipconfig
+docker exec -it cf67209e501b ipconfig
 
 #get cmd prompt in container
 docker exec -it 83cea2e373d2 cmd
