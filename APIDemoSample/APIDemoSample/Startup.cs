@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using apidemos.openapi.extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -35,8 +36,8 @@ namespace APIDemoSample
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
-                //c.OperationFilter<ProducesFilter>();
-                //c.OperationFilter<AddDefaultValuesFilter>();
+                c.OperationFilter<ProducesFilter>();
+                c.OperationFilter<AddDefaultValuesFilter>();
                 c.EnableAnnotations();
             });
         }
