@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using APIDemoSample;
 using APIDemoSample.Reperesentations;
+using apidemos.openapi.extensions;
 
 namespace APIDemoSample.Controllers
 {
@@ -42,6 +43,7 @@ namespace APIDemoSample.Controllers
 
         // GET: api/AddressTypes/5
         [HttpGet("{id}")]
+        [SwaggerDefaultValue("id", 5)]
         public async Task<IActionResult> GetAddressTypeById([FromRoute] int id)
         {
             if (!ModelState.IsValid)
