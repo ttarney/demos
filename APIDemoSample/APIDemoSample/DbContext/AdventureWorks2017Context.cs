@@ -93,7 +93,8 @@ namespace APIDemoSample
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=172.27.87.85;Database=AdventureWorks2017;Trusted_Connection=False;UID=sa;PWD=P@ssw0rd123!");
+                //optionsBuilder.UseSqlServer("Server=172.27.87.85;Database=AdventureWorks2017;Trusted_Connection=False;UID=sa;PWD=P@ssw0rd123!");
+                optionsBuilder.UseSqlServer("Server=tcp:demo-api-sql.database.windows.net,1433;Initial Catalog=AdventureWorks2017;Persist Security Info=False;User ID=ttt;Password=P@ssw0rd123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             }
         }
 

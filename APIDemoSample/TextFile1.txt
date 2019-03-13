@@ -1,0 +1,1 @@
+Server=tcp:demo-api-sql.database.windows.net,1433;Initial Catalog=AdventureWorks2017;Persist Security Info=False;User ID=ttt;Password=P@ssw0rd123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
