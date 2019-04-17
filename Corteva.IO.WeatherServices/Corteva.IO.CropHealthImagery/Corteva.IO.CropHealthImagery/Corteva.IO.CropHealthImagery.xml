@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Corteva.IO.CropHealthImagery.API</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "T:Corteva.IO.CropHealthImagery.Controllers.CropHealthImageryController" -->
+    </members>
+</doc>

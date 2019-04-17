@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corteva.IO.ImageryServices", "Corteva.IO.ImageryServices\Corteva.IO.ImageryServices.csproj", "{4880DC58-BAED-4E3C-A5E2-E227CE6579F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corteva.IO.ImageryServices.Models", "Corteva.IO.ImageryServices.Models\Corteva.IO.ImageryServices.Models.csproj", "{310CFA24-6C60-474E-8632-E4DEC4152284}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corteva.IO.ImageryServices.Patterns", "Corteva.IO.ImageryServices.Patterns\Corteva.IO.ImageryServices.Patterns.csproj", "{4ED44CE3-A4D8-458B-8648-2039BFC1A955}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corteva.IO.ImageryServices.Services", "Corteva.IO.ImageryServices.Services\Corteva.IO.ImageryServices.Services.csproj", "{99181BA8-DC64-4322-9079-2147CEE1CF41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corteva.IO.ImageryServices.ContentNegotiation", "Corteva.IO.ImageryServices.ContentNegotiation\Corteva.IO.ImageryServices.ContentNegotiation.csproj", "{12F94612-B028-4BA4-9416-01DB402A89CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corteva.IO.Swagger", "Corteva.IO.Swagger\Corteva.IO.Swagger.csproj", "{48D58182-96DF-441D-8886-40914967ABDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4880DC58-BAED-4E3C-A5E2-E227CE6579F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4880DC58-BAED-4E3C-A5E2-E227CE6579F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4880DC58-BAED-4E3C-A5E2-E227CE6579F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4880DC58-BAED-4E3C-A5E2-E227CE6579F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{310CFA24-6C60-474E-8632-E4DEC4152284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{310CFA24-6C60-474E-8632-E4DEC4152284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{310CFA24-6C60-474E-8632-E4DEC4152284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{310CFA24-6C60-474E-8632-E4DEC4152284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ED44CE3-A4D8-458B-8648-2039BFC1A955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED44CE3-A4D8-458B-8648-2039BFC1A955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED44CE3-A4D8-458B-8648-2039BFC1A955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED44CE3-A4D8-458B-8648-2039BFC1A955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99181BA8-DC64-4322-9079-2147CEE1CF41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99181BA8-DC64-4322-9079-2147CEE1CF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99181BA8-DC64-4322-9079-2147CEE1CF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99181BA8-DC64-4322-9079-2147CEE1CF41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12F94612-B028-4BA4-9416-01DB402A89CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12F94612-B028-4BA4-9416-01DB402A89CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12F94612-B028-4BA4-9416-01DB402A89CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12F94612-B028-4BA4-9416-01DB402A89CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48D58182-96DF-441D-8886-40914967ABDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48D58182-96DF-441D-8886-40914967ABDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48D58182-96DF-441D-8886-40914967ABDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48D58182-96DF-441D-8886-40914967ABDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77526461-7B6D-48F3-8451-3357CB279B84}
+	EndGlobalSection
+EndGlobal
