@@ -2,25 +2,23 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <RootNamespace>FeatureToggle.TTT_Core.Tests</RootNamespace>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GenFu" Version="1.5.6" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
-    <PackageReference Include="Moq" Version="4.11.0" />
-    <PackageReference Include="NSubstitute" Version="4.2.0" />
     <PackageReference Include="Shouldly" Version="3.0.2" />
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FeatureToggle.Common\FeatureToggle.Common.csproj" />
-    <ProjectReference Include="..\FeatureToggle.Configuration\FeatureToggle.Configuration.csproj" />
-    <ProjectReference Include="..\FeatureToggle\FeatureToggle.csproj" />
+    <ProjectReference Include="..\FeatureToggle.Common.Core\FeatureToggle.Common.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

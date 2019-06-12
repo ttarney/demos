@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureToggleFramework.Test", "FeatureToggleFramework.Test\FeatureToggleFramework.Test.csproj", "{80330AB2-B015-4385-880F-ACCA46356F48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureToggle.Common.Core", "FeatureToggle.Common.Core\FeatureToggle.Common.Core.csproj", "{E58BBF7C-EC7E-4749-9D67-4A3BF4750031}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80330AB2-B015-4385-880F-ACCA46356F48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80330AB2-B015-4385-880F-ACCA46356F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80330AB2-B015-4385-880F-ACCA46356F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80330AB2-B015-4385-880F-ACCA46356F48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E58BBF7C-EC7E-4749-9D67-4A3BF4750031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E58BBF7C-EC7E-4749-9D67-4A3BF4750031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E58BBF7C-EC7E-4749-9D67-4A3BF4750031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E58BBF7C-EC7E-4749-9D67-4A3BF4750031}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D8E2E04-B7AA-4781-B4DB-C956C6DF4C79}
+	EndGlobalSection
+EndGlobal
