@@ -19,7 +19,7 @@ namespace HALDemo.Controllers
         }
 
         [HttpGet("{beerName}", Name = "GetBeerByName")]
-        public async Task<IActionResult> GetBeerByName([FromRoute]   string beerName)
+        public async Task<IActionResult> GetBeerByName([FromRoute] string beerName)
         {
             return Ok($"a beer: {beerName}");
         }
