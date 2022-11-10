@@ -1,17 +1,40 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FeatureFlagDemoAPI.Support;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.FeatureManagement;
+using Microsoft.FeatureManagement.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace FeatureFlagDemoAPI.Controllers
 {
+    
     [Route("api/[controller]")]
     [ApiController]
+    [FeatureGate(FeatureFlags.BeersAPI)]
     public class BeerController : ControllerBase
     {
+        private readonly IFeatureManager _featureManager;
+
+        
+        public BeerController(IFeatureManager featureManager)
+        {
+            _featureManager = featureManager;
+        }
+       
         [HttpGet]
+        [FeatureGate(RequirementType.All, FeatureFlags.BeersAPI, FeatureFlags.BeersAPIGet)]
         public async Task<IActionResult> Get()
         {
-            return Ok("all beers");
+            IActionResult result = null;
+            if (await _featureManager.IsEnabledAsync(FeatureFlags.AllBeers))
+            {
+                result = Ok("all beers");
+            }
+            else
+            {
+                result = Ok("one beer");
+            }
+            return result;
             
         }
 
